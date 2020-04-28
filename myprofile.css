@@ -41,6 +41,7 @@ html {
     .div1 {
         color: cornflowerblue;
         text-align: center;
+        display:flex;
     }
 
     h4 {
