@@ -7,20 +7,31 @@
     <title>My Projects</title></head>
     <body>
     <h1>These are my recent projects</h1>
-    <div>
+    <div class="projectdiv">
     <div class="img"><img src="afrivac.png"></div>
         <div class="img"><img src="survey.png"></div>
         <div class="img"><img src="portfolio.png"></div>
 </div>
 
 <style>
-    img{
-    border-radius:40rem;
+    .img{
+    border-radius:20rem;
         margin:20px;
         border:15px;
-        heigth:auto;
-        width:50rem;
         display:inline-block;
+        height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+    }
+    .projectdiv{
+        display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
     }
 </style>
 </body>
